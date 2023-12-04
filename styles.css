@@ -1,1 +1,31 @@
 /*font-family: 'DM Sans', sans-serif;*/
+/*A la hora de escribir estilos a cualquier selector, siempre deberiamos tener un orden, el orden deberia ser el siguiente:
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más*/
+:root {
+    /*Colores*/
+    --LinearBG: linear-gradient(rgba(32, 30, 28, 1),rgba(247, 147, 26, 1));
+    --BitcoinOrange: rgba(247, 147, 26, 1);
+    --SecundaryBlue: rgba(26, 154, 247, 1);
+    --SoftBlue: rgba(231, 245, 255, 1);
+    --WarmBlack: rgba(32, 30, 28, 1);
+    --Grey: rgba(117, 117, 117, 1);
+    --LightGrey: rgba(181, 176, 172, 1);
+    --JustWhite: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
