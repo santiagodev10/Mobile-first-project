@@ -13,7 +13,7 @@
     --SecundaryBlue: rgba(26, 154, 247, 1);
     --SoftBlue: rgba(231, 245, 255, 1);
     --WarmBlack: rgba(32, 30, 28, 1);
-    --Grey: rgba(117, 117, 117, 1);
+    --Grey: rgba(186, 186, 186, 1);
     --LightGrey: rgba(181, 176, 172, 1);
     --JustWhite: rgba(255, 255, 255, 1);
     /*Tamaños de letra*/
@@ -116,4 +116,27 @@ main {
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.main-exchange-container--backgroundImg {
+    width: 192px;
+    height: 192px;
+    margin: 0 auto;
+    background-image: url(./assets/assets/img/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container--title h2 {
+    font-size: var(--lg);
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--WarmBlack);
+}
+
+.main-exchange-container--title p {
+    font-size: var(--sm);
+    color: var(--Grey);
 }
