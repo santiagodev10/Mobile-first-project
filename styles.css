@@ -35,6 +35,8 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+/*SECCION DEL HEADER*/
+
 .header-container {
     /*posicionamiento*/
     display: flex;
@@ -91,4 +93,27 @@ html {
 
 .header--ancord span {
     margin-left: 10px;
+}
+
+/*SECCION DEL MAIN*/
+
+main {
+    width: 100%;
+    height: auto; /*para que el mismo contenido defina la altura del contenedor*/
+    background-color: var(--JustWhite);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
 }
