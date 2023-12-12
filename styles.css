@@ -141,7 +141,8 @@ main {
     color: var(--Grey);
 }
 
-.main-currency-table {
+.main-currency-table,
+.main-commisions-table {
     width: 0px;
     min-width: 235px;
     max-width: 500px;
@@ -152,14 +153,22 @@ main {
     text-align: center;
 }
 
-.main-currency-table .currency-table-title {
+.currency-table-title,
+.commisions-table-container {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
     line-height: 2.3rem;
     text-align: left;
+}
+
+.currency-table-title {
     color: var(--BitcoinOrange);
+}
+
+.commisions-table-container {
+    color: var(--SecundaryBlue);
 }
 
 .currency-table-container {
@@ -268,3 +277,159 @@ main {
     bottom: 108px;
     transform: rotate(180deg);
 }
+
+/*MAIN PRODUCT DETAIL*/
+
+.main-product-detail {
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    background-color: rgba(32, 30, 28, 1);
+}
+
+.product-detail--batata-logo {
+    width: 41px;
+    height: 24px;
+    background-image: url(./assets/assets/icons/batata.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: 13px;
+}
+
+.product-detail--title {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.product-detail--title h2 {
+    font-size: var(--lg);
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--JustWhite);
+}
+
+.product-detail--title p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: var(--sm);
+    line-height: 18px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+
+/*.main-product-detail--card-real-time,
+.main-product-detail--card-hidden-rates,
+.main-product-detail--card-compare-coins,
+.main-product-detail--card-reliable-information*/
+
+.product-cards--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-detail--cards {
+    width: 90%;
+    min-width: 280px;
+    max-width: 414px;
+    height: 156px;
+    padding: 15px;
+    text-align: left;
+    background-color: rgba(40, 38, 35, 1);
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px black;
+}
+
+.product-cards--container__bottom {
+    margin-bottom: 50px;
+}
+
+.card-real-time--icon,
+.card-hidden-rates--icon,
+.card-compare-coins--icon,
+.card-reliable-information--icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.card-real-time--icon {
+    background-image: url(./assets/assets/icons/clock.svg);
+}
+
+.card-hidden-rates--icon {
+    background-image: url(./assets/assets/icons/eye.svg);
+}
+
+.card-compare-coins--icon {
+    background-image: url(./assets/assets/icons/dollar-sign.svg);
+}
+
+.card-reliable-information--icon {
+    background-image: url(./assets/assets/icons/check-circle.svg);
+}
+
+.card-real-time--h3,
+.card-hidden-rates--h3,
+.card-compare-coins--h3,
+.card-reliable-information--h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--JustWhite);
+}
+
+.card-real-time--description,
+.card-hidden-rates--description,
+.card-compare-coins--description,
+.card-reliable-information--description {
+    font-size: var(--sm);
+    color: rgba(128, 128, 128, 1);
+}
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 310px;
+    height: 70vh;
+    background-image: url(./assets/assets/img/bitcoinbaby2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin-img-container h2 {
+    position: relative;
+    top: 7rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--JustWhite);
+}
+
+/*.main-product-detail--hero {
+    width: 100%;
+    height: 387px;
+    margin-top: 30px;
+    background-image: url(./assets/assets/img/bitcoinbaby.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-product-detail--hero h2 {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    font-size: var(--lg);
+    font-weight: 700;
+    color: var(--JustWhite);
+}*/
