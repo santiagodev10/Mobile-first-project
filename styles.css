@@ -414,6 +414,152 @@ main {
     color: var(--JustWhite);
 }
 
+.main-plans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.plans--title {
+    width: 95%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.plans--title h2 {
+    margin-bottom: 20px;
+    color: var(--WarmBlack);
+    font-size: var(--lg);
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.plans--title p {
+    font-size: var(--sm);
+    font-weight: 500;
+    color: rgba(117, 117, 117, 1);
+    line-height: 18px;
+}
+
+.plans-container--slider {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: 100%;
+    max-width: 320px;
+    height: 285px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--JustWhite);
+    box-shadow: 0px 2px 8px 4px rgba(89, 73, 30, 0.16)
+}
+
+.plans-container--card__left {
+    margin-left: 65px;
+}
+
+.plans-container--card__right {
+    margin-right: 65px;
+}
+
+.plans-container--card > p {
+    width: 55%;
+    position: relative;
+    bottom: 15px;
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--JustWhite);
+    background-color: var(--BitcoinOrange);
+}
+
+.card--description {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0 auto;
+}
+
+.card--description h3 {
+    font-size: var(--sm);
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.description--price {
+    position: relative;
+    font-size: 52px;
+    font-family: Inter, "sans-serif";
+    font-weight: 700;
+    line-height: 62.93px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: -4px;
+}
+
+.description--dollar {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(54, 54, 54, 1);
+}
+
+.description--plan {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(117, 117, 117, 1);
+}
+
+.card--description .description--button {
+    height: 50px;
+    position: relative;
+    margin-top: 8px;
+    padding: 12px;
+    border: 2px solid var(--BitcoinOrange);
+    border-radius: 4px;
+    text-align: start;
+    font-family: "DM Sans", sans-serif;
+    font-size: var(--sm);
+    font-weight: 700;
+    color: var(--WarmBlack);
+}
+
+.description--button span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 17px;
+    top: 11px;
+    background-image: url(./assets/assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*.main-product-detail--hero {
     width: 100%;
     height: 387px;
