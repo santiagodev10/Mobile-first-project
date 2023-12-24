@@ -1,0 +1,5 @@
+.body-cards-container {
+    flex-wrap: wrap;
+    width: 900px;
+    height: 380px;
+}

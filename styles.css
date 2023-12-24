@@ -141,16 +141,35 @@ main {
     color: var(--Grey);
 }
 
+.main-tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table,
 .main-commisions-table {
     width: 0px;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    scroll-snap-align: center;
+    margin-left: 65px;
+    margin-right: 25px;
     padding: 20px;
     font-family: "Inter", sans-serif;
     text-align: center;
+}
+
+.main-currency-table {
+    margin-left: calc(22%);
+    margin-right: calc(16%);
+}
+
+.main-commisions-table {
+    margin-right: calc(22%);
+    margin-left: calc(21%);
 }
 
 .currency-table-title,
@@ -266,15 +285,15 @@ main {
 .currency-table-container .arrow-right {
     width: 20px;
     position: relative;
-    left: 220px;
-    bottom: 110px;
+    left: calc(90%);
+    bottom: calc(50%);
 }
 
 .currency-table-container .arrow-left {
     width: 20px;
     position: relative;
-    right: 48px;
-    bottom: 108px;
+    right: calc(18%);
+    bottom: calc(50%);
     transform: rotate(180deg);
 }
 
@@ -286,7 +305,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
     text-align: center;
     background-color: rgba(32, 30, 28, 1);
 }
@@ -305,6 +323,7 @@ main {
 .product-detail--title {
     width: 80%;
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .product-detail--title h2 {
@@ -328,6 +347,14 @@ main {
 .main-product-detail--card-compare-coins,
 .main-product-detail--card-reliable-information*/
 
+.body-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
 .product-cards--container {
     display: flex;
     flex-direction: column;
@@ -344,10 +371,6 @@ main {
     background-color: rgba(40, 38, 35, 1);
     border-radius: 5px;
     box-shadow: 0px 3px 0px black;
-}
-
-.product-cards--container__bottom {
-    margin-bottom: 50px;
 }
 
 .card-real-time--icon,
@@ -449,7 +472,7 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     width: 100%;
-    max-width: 320px;
+    /*max-width: 320px;*/
     height: 285px;
     margin-top: 20px;
     padding-top: 15px;
@@ -497,6 +520,7 @@ main {
     height: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 6px;
     margin: 0 auto;
 }
@@ -534,6 +558,7 @@ main {
 }
 
 .card--description .description--button {
+    width: 150px;
     height: 50px;
     position: relative;
     margin-top: 8px;
@@ -587,22 +612,37 @@ main {
     color: var(--JustWhite);
 }
 
-/*.main-product-detail--hero {
-    width: 100%;
-    height: 387px;
-    margin-top: 30px;
-    background-image: url(./assets/assets/img/bitcoinbaby.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+@media (min-width: 420px) {
+    .main-currency-table {
+        margin-left: calc(31%);
+    }
+
+    .main-commisions-table {
+        margin-right: calc(31%);
+    }
 }
 
-.main-product-detail--hero h2 {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    top: 60px;
-    font-size: var(--lg);
-    font-weight: 700;
-    color: var(--JustWhite);
-}*/
+@media (min-width: 650px) {
+    .main-tables-container {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .main-currency-table {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main-commisions-table {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+}
